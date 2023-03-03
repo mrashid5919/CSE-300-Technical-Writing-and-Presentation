@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\begin{document}
+\section{Tabular Results}
+
+\subsection{Preliminary results}
+\autoref{tab:table1} shows some preliminary results on friction considering dry, clean and lubricated surfaces.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \multicolumn{2}{|c|}{Static friction}
+         &  \multirow{2}{*}{    } & \multicolumn{2}{|c|}{Sliding friction}\\
+    \cline{1-2}
+    \cline{4-5}
+    dry and clean & lubricated &    & dry and clean & lubricated\\
+    \hline
+    \ 0.15 & 0.111 & steel on steel & 0.14 & 0.001 \\
+    \ 0.19 & 0.1 & steel on iron & 0.18 & 0,001 \\
+    \hline
+    \end{tabular}
+    \caption{Table showing preliminary results}
+    \label{tab:table1}
+\end{table}
+
+\subsection{Advanced Results}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \multirow{10}{*}{numeric literals} & \multirow{5}{*}{integers} & in decimal & 8743\\
+    \cline{3-4}
+    & & \multirow{2}{*}{in octal} & 0o7464\\
+    \cline{4-4}
+    & & & 0O103\\
+    \cline{3-4}
+    & & \multirow{2}{*}{in hexadecimal} & 0x5A0FF\\
+    \cline{4-4}
+    & & & 0xE0F2\\
+    \cline{2-4}
+    & \multirow{5}{*}{fractionals} & \multirow{5}{*}{in decimal} & 140.58\\
+    \cline{4-4}
+    & & & 8.04e7 \\
+    \cline{4-4}
+    & & & 0.347E+12 \\
+    \cline{4-4}
+    & & & 5.47E-12\\
+    \cline{4-4}
+    & & & 47e22\\
+    \hline
+    \multicolumn{3}{|c|}{   } & 'H'\\
+    \cline{4-4}
+    \multirow{2}{*}{char literals} & \multirow{2}{*}{   } & \multirow{2}{*}{   } & '$\backslash$n'\\
+    \cline{4-4}
+    & & & '$\backslash$x65'\\
+    \hline
+    \end{tabular}
+    \label{tab:table2}
+\end{table}
+\end{document}
